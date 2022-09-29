@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cover_image">
+        <img id="cover" src="plan.jpg" alt="" />
+      </div>
+      <div class="login">
+        <div id="intro">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </p>
+          <br />
+          <p>Sign up now to get started.</p>
+          <br />
+          <p>You know you want to.</p>
+        </div>
+
+        <form id="login_area" action="" method="post">
+          <p>Let's do this!</p>
+          <div class="login-form">
+            <div class="login-part">
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name" required />
+              <p id="demo"></p>
+            </div>
+            <div class="login-part">
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name" required />
+            </div>
+            <div class="login-part">
+              <label for="user_email">Email Address</label>
+              <input
+                type="email"
+                id="user_email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="login-part">
+              <label for="phone_number">Phone Number</label>
+              <input type="number" id="phone_number" name="phone" required />
+            </div>
+            <div class="login-part">
+              <label for="user_password">Password</label>
+              <input
+                type="password"
+                id="user_password"
+                name="password"
+                required
+              />
+            </div>
+            <div class="login-part">
+              <label for="match_password">Confirm Password</label>
+              <input
+                type="password"
+                id="match_password"
+                name="password"
+                required
+              />
+            </div>
+          </div>
+        </form>
+
+        <div id="btn">
+          <button type="submit" onclick="myFunction()">Create Account</button>
+          <p>Already have an account? <span>Log in</span></p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        let x = document.getElementById("first_name").value;
+        let y = document.getElementById("demo");
+
+        let text;
+        if (x === "") {
+          y.textContent = "Please Enter first namme";
+        } else {
+          y.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
