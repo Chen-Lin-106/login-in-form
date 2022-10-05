@@ -61,12 +61,16 @@ label {
   text-transform: uppercase;
 }
 
+input:focus {
+  background-color: lightblue;
+}
+
 #btn {
-  padding: 20px 230px 50px 40px;
+  padding: 20px 0px 0px 0px;
 }
 
 #btn button {
-  background-color: rgb(85, 149, 85);
+  background-color: #596d48;
   color: white;
   padding: 10px 30px;
   border-radius: 10px;

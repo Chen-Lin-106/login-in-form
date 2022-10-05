@@ -69,26 +69,12 @@
               />
             </div>
           </div>
+          <div id="btn">
+            <button type="submit" onclick="myFunction()">Create Account</button>
+            <p>Already have an account? <span>Log in</span></p>
+          </div>
         </form>
-
-        <div id="btn">
-          <button type="submit" onclick="myFunction()">Create Account</button>
-          <p>Already have an account? <span>Log in</span></p>
-        </div>
       </div>
     </div>
-    <script>
-      function myFunction() {
-        let x = document.getElementById("first_name").value;
-        let y = document.getElementById("demo");
-
-        let text;
-        if (x === "") {
-          y.textContent = "Please Enter first namme";
-        } else {
-          y.style.display = "none";
-        }
-      }
-    </script>
   </body>
 </html>
